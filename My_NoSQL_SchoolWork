@@ -1,0 +1,20 @@
+use petshop
+  //creating a database name petshop//
+  
+db.createCollection("mammals")
+  //creating a collection named mammals//
+
+show dbs
+  //showing all existing database
+
+show collection
+  //showing all existing collections
+
+db.mammals.insert({name: "Polar Bear"})
+  //adding Polar Bear on the collection nanmed mamals
+
+db.mammals.insert({name: "Star Nosed Mole"})
+  //adding Star Nosed Mole on the collection nanmed mamals
+
+db.mammals.find()
+  //Showing all data inside of mammals collections
