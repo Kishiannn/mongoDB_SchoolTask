@@ -4,6 +4,9 @@ use petshop
 db.createCollection("mammals")
   //creating a collection named mammals//
 
+db.dropDatabase()
+  //Deleting the database
+
 show dbs
   //showing all existing database
 
