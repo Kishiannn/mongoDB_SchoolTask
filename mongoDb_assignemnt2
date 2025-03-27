@@ -1,0 +1,34 @@
+use petshop
+  //use database named petshop
+
+dv.createCollections('pets')
+  //create collection named pets
+
+
+db.pets.insert({name: "Mikey", species: "Gerbil"})
+db.pets.insert({name: "Davey Bungooligan", species: "Piranha"})
+db.pets.insert({name: "Suzy B", species: "Cat"})
+db.pets.insert({name: "Mikey", species: "Hotdog"})
+db.pets.insert({name: "Terrence", species: "Sausagedog"})
+db.pets.insert({name: "Philomena Jones", species: "Cat"})
+db.pets.insert({name: "Henry", species: "Piranha"})
+db.pets.insert({name: "Henry", species: "Naked Mole Rat"})
+  //Inserting a named and species data into the collections
+
+db.pets.find()
+  //Findinf all the data on the collections named pets
+
+ db.pets.find({name : "Mikey", species: "Girbel"})
+  //Command to find the pet named Mikey and species is Girbel on the collections
+
+db.pets.find(ObjectId('67e55c05e86891c470726b7b'))
+  //Command to find the data that match in the Id
+
+db.pets.find({species: "Girbel"})
+  //Command to find all the Girbel on the Collections
+
+db.pets.find({name: "Mikey"})
+  //Command to find all the pets named Mikey on the collectionms
+
+db.pets.find({species: /dog/})
+  //Command to show all the data that have string "dog" on there species
