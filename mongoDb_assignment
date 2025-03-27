@@ -1,0 +1,14 @@
+use petshop
+  //use databse named petshop
+
+db.createCollection('mammals')
+
+db.mammals.insert({name :"Polar Bear"})
+db.mammals.insert({name :"Star Nosed Mole"})
+db.mammals.insert({name :"Dog"})
+db.mammals.insert({name :"Cat"})
+db.mammals.insert({name :"Tiger"})
+  //Insert data in the collection named mammals
+
+db.mammals.find()
+  //Showing all data in the collections
