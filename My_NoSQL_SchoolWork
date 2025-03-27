@@ -10,6 +10,9 @@ db.dropDatabase()
 show dbs
   //showing all existing database
 
+use petshop
+  //Recreate database petshop
+
 show collection
   //showing all existing collections
 
